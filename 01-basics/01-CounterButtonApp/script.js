@@ -6,10 +6,8 @@ import {defineComponent} from "./vendor/vue.esm-browser";
 const App = defineComponent({
 
   data() {
-    let counter = 0;
     return {
-      foo: 'bar',
-      counter
+      counter: 0
     }
   },
 
