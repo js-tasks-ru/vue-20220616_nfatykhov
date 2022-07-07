@@ -42,7 +42,7 @@ const App = defineComponent({
   computed: {
     markedEmails() {
       return emails.map((email) =>
-        (email.includes(this.filter) ? { email: email, marked: "marked" } : { email: email, marked: "" }));
+        (email.includes(this.filter) ? { email: email, marked: true } : { email: email, marked: false }));
     }
   }
 });
