@@ -28,8 +28,8 @@ export default defineComponent({
         <h3 v-if="agendaItem.title" class="agenda-item__title">{{ agendaItem.title }} </h3>
         <h3 v-else class="agenda-item__title">{{ \`\${agendaItemDefaultTitles[agendaItem.type]}\` }}</h3>
         <p v-if="agendaItem.type === 'talk'" class="agenda-item__talk">
-          <span>Talk Speaker</span>
-          <span class="agenda-item__dot">{{ agendaItem.speaker }}</span>
+          <span>{{ agendaItem.speaker }}</span>
+          <span class="agenda-item__dot"></span>
           <span class="agenda-item__lang">{{ agendaItem.language }}</span>
         </p>
         <p>{{ agendaItem.description }}</p>
